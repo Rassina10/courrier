@@ -14,6 +14,7 @@ class CourrierController extends Controller
         $this->courrierService = $courrierService;
     }
 
+
     public function index()
     {
         return response()->json($this->courrierService->getAllCourriers());
